@@ -1,5 +1,19 @@
 angular.module('myApp',[]).controller('myController',function($scope){
-	$scope.items =[
+	
+	$scope.addPerson = function(){
+		$scope.students.push({
+			name: $scope.newName, 
+			desc: $scope.newDesc
+		});
+		$scope.newName = "";
+		$scope.netDesc = "";
+	}
+
+	$scope.removeStudent = function (studentToRemove){
+		var i = $scope.students.indexOf(studentToRemove)
+		$scope.students.splice(i,1);
+	}
+	$scope.students =[
 
 	{
 		name: 'Freddy',
@@ -18,8 +32,16 @@ angular.module('myApp',[]).controller('myController',function($scope){
 		desc: 'Awesome theme'
 	},
 	{
-		name: 'Griffin',
+		name: 'Oliver',
 		desc: 'Eats 8 times/day'
+	},
+	{
+		name: 'Griffin',
+		desc: 'Plays Games'
+	},
+	{
+		name: 'Yohsuke',
+		desc: 'Hockey Player'
 	},
 
 	];
