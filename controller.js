@@ -17,32 +17,41 @@ angular.module('myApp',[]).controller('myController',function($scope){
 
 	{
 		name: 'Freddy',
-		desc: 'Made a cool football game'
+		desc: 'Made a cool football game',
+		luckynumber: '1'
 	},
 	{
 		name: 'Chance',
-		desc: 'Bootstrap Guy'
+		desc: 'Bootstrap Guy',
+		luckynumber: '2'
 	},
 	{
 		name: 'Will',
-		desc: 'The wig guy'
+		desc: 'The wig guy',
+		luckynumber: '3'
 	},
 	{
 		name: 'Stephen',
-		desc: 'Awesome theme'
+		desc: 'Awesome theme',
+		luckynumber: '4'
 	},
 	{
 		name: 'Oliver',
-		desc: 'Eats 8 times/day'
+		desc: 'Eats 8 times/day',
+		luckynumber: '5'
 	},
 	{
 		name: 'Griffin',
-		desc: 'Plays Games'
+		desc: 'Plays Games',
+		luckynumber: '6'
 	},
 	{
 		name: 'Yohsuke',
-		desc: 'Hockey Player'
+		desc: 'Hockey Player',
+		luckynumber: '7'
 	},
 
 	];
 });
+
+	
